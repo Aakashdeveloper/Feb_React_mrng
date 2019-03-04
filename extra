@@ -321,3 +321,11 @@ constants
 
 we call action by component
 and recive data inside component via reducer
+
+
+// Day 17
+mapStateToProps=> which will recive the state and set to props;
+mapDispatchToProps=> which will bind the actions with component
+
+redux connect in container
+display in component
