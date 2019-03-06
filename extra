@@ -329,3 +329,7 @@ mapDispatchToProps=> which will bind the actions with component
 
 redux connect in container
 display in component
+
+// Day 18(22 record)
+react-slick for slider
+for middleware we will use reduxPromise

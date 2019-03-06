@@ -1,0 +1,1 @@
+import {Articles_URL, Gallery_URL} from '../constants/ApiUrl';
