@@ -21,3 +21,41 @@ footer{
     color:peru;
     font-family: 'Sedgwick Ave Display', cursive;
 }
+
+/*======================
+        Latest
+========================*/
+.home_latest{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.home_latest .item .image_cover{
+    position: relative;
+    background-size:cover !important;
+    height: 200px;
+}
+
+.home_latest .item .description{
+    position: absolute;
+    bottom: 0px;
+}
+
+.home_latest .item .description span{
+    background:#00BCD4;
+    padding: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+}
+
+.home_latest .item .description div {
+    padding: 10px;
+    font-size:15px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(56, 99, 116);
+    width:40%;
+}

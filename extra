@@ -333,3 +333,10 @@ display in component
 // Day 18(22 record)
 react-slick for slider
 for middleware we will use reduxPromise
+
+
+.then => both +ve response or -ve respone 
+.catch => in case only -ve response
+.success => only +ve response
+
+Api url: https://ngmusicdb.herokuapp.com/api/getMusic

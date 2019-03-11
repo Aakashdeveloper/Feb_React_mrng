@@ -14,7 +14,7 @@ class Home extends Component{
     render(){
         return(
             <div>
-                <LatestNews/>
+                <LatestNews latestData={this.props.articles.latest}/>
             </div>
         )
     }
@@ -22,6 +22,7 @@ class Home extends Component{
 
 // recive state
 function mapStateToProps(state){
+    console.log('state in home', state)
     return{
         articles:state.articles
     }
