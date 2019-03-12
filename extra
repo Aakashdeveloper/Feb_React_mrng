@@ -340,3 +340,49 @@ for middleware we will use reduxPromise
 .success => only +ve response
 
 Api url: https://ngmusicdb.herokuapp.com/api/getMusic
+
+
+
+create-action => create/add to reducer => inside container call action=>
+dispatch action => bind state => send as props => recive as props
+>>>>Step1:
+export function latestNews(){
+    const output = fetch(`${Articles_URL}?_end=3`,{method:'GET'})
+            .then((response) => response.json())
+
+        return{
+            type:"GET_LATEST",
+            payload: output
+        }
+}
+>>>>Step2:
+case 'GET_LATEST':
+            return {...state, latest:action.payload}
+>>>>Step3:
+
+componentDidMount(){
+        this.props.latestNews();
+    }
+>>>>Step4
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({latestNews},dispatch)
+}
+>>>>Step5
+function mapStateToProps(state){
+    return{
+        articles:state.articles,
+    }
+}
+>>>>Step6
+<LatestNews latestData={this.props.articles.latest}/>
+
+>>>>Step7
+
+const LatestNews = (props) => {
+    console.log('in latesst', props)
+    return(
+        <div className="home_latest">
+            {showLatest(props)}
+        </div>
+    )
+}

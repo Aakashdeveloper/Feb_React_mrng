@@ -9,3 +9,23 @@ export function latestNews(){
             payload: output
         }
 }
+
+export function articleNews(){
+    const output = fetch(`${Articles_URL}?_start=3&_end=10`,{method:'GET'})
+            .then((response) => response.json())
+
+        return{
+            type:"GET_ARTICLE",
+            payload: output
+        }
+}
+
+export function GalleryNews(){
+    const output = fetch(`${Gallery_URL}`,{method:'GET'})
+            .then((response) => response.json())
+
+        return{
+            type:"GET_GALLERY",
+            payload: output
+        }
+}
