@@ -28,7 +28,7 @@ class Home extends Component{
 
 // recive state
 function mapStateToProps(state){
-    console.log('state in home', state)
+    // console.log('state in home', state)
     return{
         articles:state.articles,
         gallery:state.gallery

@@ -35,7 +35,7 @@ const renderArticle =  ({articleData}) => {
 }
 
 const ArticleList = (props) => {
-    console.log('in article', props);
+    // console.log('in article', props);
     return(
         <div className="other-news">
             <h2>Articles</h2>
