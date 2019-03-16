@@ -8,6 +8,8 @@ export default function(state={}, action) {
             return {...state, selectedNews:action.payload}
         case 'CLEAR_SELECTED_NEWS':
             return {...state, selectedNews:action.payload}
+        case 'HANDLE_LIKES_ARTICLE':
+            return {...state, selectedNews:[action.payload]}
         default:
             return state
     }
